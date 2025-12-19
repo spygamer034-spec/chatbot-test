@@ -1,5 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+    // --- Mobile Navigation Toggle ---
+    const navToggle = document.querySelector('.nav-toggle');
+    const mainNav = document.querySelector('.main-nav');
+
+    navToggle.addEventListener('click', () => {
+        mainNav.classList.toggle('nav-open');
+    });
+
     // --- Intersection Observer for scroll animations ---
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
