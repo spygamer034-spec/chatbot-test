@@ -71,3 +71,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 });
+if (
+  !localStorage.getItem("theme") &&
+  window.matchMedia("(prefers-color-scheme: dark)").matches
+) {
+  document.body.classList.add("dark-mode");
+  toggle.checked = true;
+}
