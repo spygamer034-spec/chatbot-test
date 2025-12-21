@@ -437,3 +437,24 @@ body.dark-mode footer,
 body.dark-mode section {
   background-color: #020617;
 }
+/* Dark mode card fixes */
+body.dark-mode .card,
+body.dark-mode .feature-card,
+body.dark-mode .content-card {
+  background-color: #020617; /* dark slate */
+  color: #e5e7eb;           /* readable light text */
+  box-shadow: 0 0 0 1px rgba(255,255,255,0.05);
+}
+body.dark-mode .card h2,
+body.dark-mode .card h3,
+body.dark-mode .feature-card h2 {
+  color: #93c5fd; /* soft blue */
+}
+body.dark-mode .card p,
+body.dark-mode .feature-card p {
+  color: #cbd5f5;
+}
+body.dark-mode h1,
+body.dark-mode h2.section-title {
+  color: #e5e7eb;
+}
